@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #dfe2ec;
+}
+
+header {
+  background: #171738;
+  background: linear-gradient(
+    90deg,
+    rgba(23, 23, 56, 1) 0%,
+    rgba(23, 23, 56, 1) 50%,
+    rgba(23, 23, 56, 1) 100%
+  );
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+main {
+  margin: 20px 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header-container {
+  display: flex;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.holder-profile {
+  display: flex;
+  align-items: center;
+}
+.img-profile {
+  width: 200px;
+  height: 200px;
+  border: 5px solid white;
+  border-radius: 100%;
+  box-shadow: 5px 5px 10px 2px rgba(84, 43, 111, 0.485);
+  transition: all;
+  transition-duration: 1s;
+}
+.img-profile:hover {
+  margin-left: -10px;
+}
+
+.detail-profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-available {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
+.available {
+  margin: 0 10px;
+}
+
+.name-profile {
+  font-size: 2.5em;
+  font-weight: bold;
+  /* flex: 1; */
+  margin-right: 10px;
+  text-align: left;
+}
+
+.title-profile {
+  font-size: 1.5em;
+  font-weight: medium;
+  flex-wrap: wrap;
+  padding-left: 1.4em;
+}
+
+/* .circle {
+  width: 5px;
+  color: #fff;
+  background-color: #5cff4c;
+  border-radius: 80%;
+  padding: 7px 7px;
+} */
+
+.box-available {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  color: #fff;
+  background-color: #13ce00;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.box-available::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.box-available::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: start;
+  margin: 15px 0;
+  padding-left: 2em;
+}
+
+.button {
+  background-color: #171738;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-cv {
+  background-color: #13ce00;
+}
+
+.btn-cv:hover {
+  background-color: #0f9d00;
+}
+
+.btn-contact {
+  background-color: #990000;
+}
+
+.btn-contact:hover {
+  background-color: #d13c3c;
+}
+
+#about {
+  margin: 20px 0;
+}
+
+.about h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.about p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  font-weight: medium;
+}
+
+.bar-container {
+  width: 100%;
+  height: 20px;
+  border-radius: 20px;
+  background-color: rgb(235, 233, 233);
+  position: relative;
+}
+.bar-filling {
+  position: absolute;
+
+  height: 20px;
+  border-radius: 20px;
+  transition: all;
+  transition-duration: 1s;
+}
+.green {
+  background-color: #202e51;
+  width: 80%;
+}
+.orange {
+  background-color: #451800;
+  width: 75%;
+}
+.purple {
+  background-color: #669696;
+  width: 65%;
+}
+
+#work {
+  margin: 20px 0;
+}
+
+.work h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.work p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  font-weight: medium;
+}
+
+.work-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.work-card {
+  width: 30%;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px 2px rgba(84, 43, 111, 0.485);
+}
+
+.work-card:hover {
+  box-shadow: 5px 5px 10px 2px rgba(84, 43, 111, 0.685);
+}
+
+.work-card h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #171738;
+}
+
+.work-card h4 {
+  font-size: 1.2em;
+  font-weight: medium;
+  margin-bottom: 10px;
+  color: #593c8f;
+}
+
+.work-card p {
+  font-size: 1.2em;
+  font-weight: medium;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background: #171738;
+  background: linear-gradient(
+    90deg,
+    rgba(23, 23, 56, 1) 0%,
+    rgba(23, 23, 56, 1) 50%,
+    rgba(23, 23, 56, 1) 100%
+  );
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  margin: 0 auto;
+}
